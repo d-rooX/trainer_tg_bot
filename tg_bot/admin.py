@@ -1,10 +1,16 @@
 from django.contrib import admin
-from .models import Client
+from .models import Client, Lesson
+
+
+class LessonAdminInline(admin.TabularInline):
+	model = Lesson
+	extra = 0
 
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
-	pass
+	readonly_fields = ('telegram_id',)
+	inlines = [LessonAdminInline]
 
 
 
