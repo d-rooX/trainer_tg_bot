@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "kostia-telegram-bot"
+version = "0.1.0"
+description = ""
+authors = ["d-rooX <bot0463@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kostia_telegram_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.1"
+pytelegrambotapi = "^4.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
