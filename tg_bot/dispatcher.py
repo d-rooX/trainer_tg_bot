@@ -1,8 +1,7 @@
-import datetime
-
 from telebot import TeleBot, ExceptionHandler
 from telebot.types import Message
-from .models import Client, Lesson
+
+from .models import Client
 
 
 class MyExceptionHandler(ExceptionHandler):
