@@ -15,5 +15,5 @@ def webhook(request):
 
 
 def start(request):
-	res = bot.set_webhook('https://9c50-188-163-72-69.eu.ngrok.io/')
+	res = bot.set_webhook('https://2c7f-188-163-72-69.eu.ngrok.io/')
 	return HttpResponse(content=str(res).encode('utf-8'))
